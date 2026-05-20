@@ -1,6 +1,10 @@
 import { Icon } from "@iconify/react";
-
-export default function ExpertiseCertBadge({ certification }: string) {
+type ExpertiseCertBadgeProps = {
+  certification: string;
+};
+export default function ExpertiseCertBadge({
+  certification,
+}: ExpertiseCertBadgeProps) {
   return (
     <span className="expertise__cert_badge">
       <Icon
