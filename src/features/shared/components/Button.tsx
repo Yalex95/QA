@@ -1,4 +1,13 @@
-import type { ButtonProps } from "@/types/button";
+import type {
+  ButtonProps,
+  ButtonVariant,
+} from "@/features/shared/components/types/button";
+
+const baseStyles: Record<ButtonVariant, string> = {
+  primary: "bg-[var(--color-primary)] text-white border-1",
+  secondary: "bg-white border-1 text-[var(--color-primary)]",
+  badge: "bg-white border-1 text-[var(--color-secondary)]",
+};
 
 const baseStyles: Record<ButtonVariant, string> = {
   primary: "bg-[var(--color-primary)] text-white border-1",
