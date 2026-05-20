@@ -10,7 +10,7 @@
   }
 
   h2 {
-    @apply text-3xl md:text-5xl font-semibold leading-tight;
+    @apply text-2xl md:text-3xl lg:text-5xl font-semibold leading-tight;
   }
 
   h3 {

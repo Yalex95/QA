@@ -4,41 +4,50 @@
   @apply w-full  bg-[var(--color-surface)] px-8;
 
   .expertise__container {
-    @apply flex flex-col md:flex-row flex-col-reverse  max-w-7xl mx-auto gap-14;
-    padding-top: clamp(40px, 10vw, 80px);
-    padding-bottom: clamp(40px, 10vw, 80px);
+    @apply flex flex-wrap flex-col md:flex-row   max-w-7xl mx-auto gap-x-14;
+    padding-top: clamp(40px, 20vw, 80px);
+    padding-bottom: clamp(40px, 20vw, 80px);
 
     .expertise__image_content {
-      @apply w-fit shrink-0;
+      @apply w-fit shrink-0 md:max-w-xs lg:max-w-full m-auto;
     }
 
     .expertise__content {
-      @apply flex-1 flex flex-col gap-10;
+      @apply flex-1 flex flex-col gap-10 m-auto;
 
       .expertise__title {
-        @apply text-[var(--color-primary)] font-bold tracking-tight leading-tight relative inline-flex items-center gap-3;
+        @apply text-[var(--color-primary)] font-bold tracking-tight leading-tight relative inline-flex items-center gap-3 md:text-2xl;
       }
 
       .expertise__line {
-        @apply hidden md:block bg-[var(--color-secondary)] h-1 w-16;
+        @apply block bg-[var(--color-secondary)] h-0.5 md:h-1 w-14 md:w-16;
       }
 
       .expertise__iso_certs {
         /* change to swiper */
-        @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+        @apply md:hidden grid lg:grid grid-cols-1 md:grid-cols-2 gap-4;
       }
 
       .expertise__desc {
         @apply text-[var(--color-text)] mt-3;
       }
 
-      .expertise__cert_badge {
-        @apply inline-flex items-center gap-3 bg-white rounded-md px-4 py-3 text-[var(--color-primary)] font-semibold;
-      }
-
       .expertise__link {
         @apply inline-flex items-center gap-3 text-[var(--color-secondary)] font-semibold capitalize;
       }
+    }
+    .expertise__iso_icon {
+      @apply text-[var(--color-secondary)] w-10 h-10;
+    }
+    .expertise__iso_certs_container {
+      /* change to swiper */
+      @apply w-full hidden md:grid lg:hidden grid-cols-1 md:grid-cols-4 gap-4;
+      .expertise__iso_icon {
+        @apply hidden;
+      }
+    }
+    .expertise__cert_badge {
+      @apply inline-flex md:flex md:flex-col text-center lg:inline-flex items-center gap-3 bg-white rounded-md px-4 py-3 text-[var(--color-primary)] font-semibold shadow-md;
     }
   }
 }

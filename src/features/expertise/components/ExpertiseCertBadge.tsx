@@ -9,7 +9,7 @@ export default function ExpertiseCertBadge({
     <span className="expertise__cert_badge">
       <Icon
         icon="material-symbols:check-circle-outline"
-        className="text-[var(--color-secondary)]"
+        className="expertise__iso_icon"
       />
       {certification}
     </span>
