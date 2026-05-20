@@ -9,6 +9,8 @@ const baseStyles: Record<ButtonVariant, string> = {
   badge: "bg-white border-1 text-[var(--color-secondary)]",
 };
 
+
+
 export default function Button({
   variant,
   children,

@@ -1,19 +1,18 @@
 @reference "tailwindcss";
 
 .core-specialist {
-  @apply flex flex-col justify-center items-center max-w-7xl mx-auto gap-14;
-  padding-top: clamp(40px, 10vw, 80px);
-  padding-bottom: clamp(40px, 10vw, 48px);
+  @apply flex flex-col justify-center items-center max-w-7xl mx-auto gap-14 px-8;
+  padding-top: clamp(40px, 20vw, 80px);
+  padding-bottom: clamp(40px, 20vw, 80px);
 
   .core-specialist__title {
-    @apply text-[var(--color-primary)] font-bold text-center;
+    @apply text-[var(--color-primary)] font-bold text-center text-3xl mb-4;
   }
   .core-specialist__text {
     @apply text-[var(--color-text)] text-center;
   }
   .core-specialist__card_container {
     @apply w-full grid md:grid-cols-5 gap-8;
-    /* swiper */
   }
   .core-specialist__card {
     @apply bg-[var(--color-surface-light)] rounded-md p-8 flex flex-col gap-4;
@@ -28,8 +27,7 @@
     }
   }
   .core-specialist__metrics {
-    /* gsap animation */
-    @apply w-full grid md:grid-cols-3 gap-8;
+    @apply w-full grid md:grid-cols-3 gap-15 md:gap-8 pt-24 md:p-0 md:border-0 border-t border-gray-200;
 
     .core-specialist__metrics_item {
       @apply text-center;
@@ -44,13 +42,13 @@
     }
     .core-specialist__metrics_item:first-child,
     .core-specialist__metrics_item:last-child {
-      border-color: var(--color-primary);
+      @apply border-[var(--color-primary)];
     }
     .core-specialist__metrics_item:first-child {
-      border-right-width: 2px;
+      @apply border-0 md:border-r;
     }
     .core-specialist__metrics_item:last-child {
-      border-left-width: 2px;
+      @apply border-0 md:border-l;
     }
   }
 }

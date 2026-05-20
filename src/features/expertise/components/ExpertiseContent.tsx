@@ -1,14 +1,13 @@
 import { Icon } from "@iconify/react";
 import ExpertiseCertBadge from "./ExpertiseCertBadge";
 
-const certifications = [
-  "ISO 9001: Quality Management",
-  "ISO 14001: Environmental",
-  "ISO 45001: Ocupational Healt",
-  "ISO 13485: Medical devices",
-];
+type ExpertiseContentProps = {
+  certifications: string[];
+};
 
-export default function ExpertiseContent() {
+export default function ExpertiseContent({
+  certifications,
+}: ExpertiseContentProps) {
   return (
     <div className="expertise__content">
       <div>
@@ -24,7 +23,7 @@ export default function ExpertiseContent() {
           efficiency.
         </p>
       </div>
-      <div className="expertise__iso_certs">
+      <div className="expertise__iso_certs ">
         {certifications.map((cert, index) => (
           <ExpertiseCertBadge key={index} certification={cert} />
         ))}

@@ -1,9 +1,9 @@
 @reference "tailwindcss";
 
 .hero {
-  @apply lg:grid lg:grid-cols-2 items-center min-h-screen w-full  mx-auto px-8 lg:px-10 gap-y-4 lg:gap-y-0 lg:gap-x-12  lg:max-w-6xl 2xl:max-w-7xl lg:px-0;
-  padding-top: clamp(40px, 10vw, 80px);
-  padding-bottom: clamp(40px, 10vw, 80px);
+  @apply grid md:grid-cols-2 md:gap-24 items-center lg:min-h-screen w-full  mx-auto px-8 lg:px-10 gap-y-10 lg:gap-y-0 lg:gap-x-12  lg:max-w-6xl 2xl:max-w-7xl;
+  padding-top: clamp(40px, 20vw, 80px);
+  padding-bottom: clamp(40px, 20vw, 80px);
 
   .hero__content {
     @apply flex flex-col lg:gap-8 gap-6;
@@ -31,8 +31,31 @@
   .hero__description {
     @apply text-[var(--color-text)];
   }
-  .hero__image {
-    @apply rounded-2xl hidden md:block;
+
+  .hero__image_container {
+    @apply relative shadow-xl rounded-md bg-amber-200;
+    .hero__image {
+      @apply md:rounded-2xl md:shadow-2xl rounded-t-md;
+    }
+    .hero__cert_badge {
+      @apply md:absolute md:bottom-4 md:-left-8  md:shadow-xl md:w-fit  bg-white flex p-4 md:rounded-md  rounded-b-md gap-6 md:gap-8;
+
+      .hero__cert_icon {
+        @apply bg-[var(--color-secondary-light)] p-2 text-[var(--color-secondary)] rounded-sm md:m-auto my-auto;
+      }
+
+      .hero__cert_text {
+        span {
+          @apply block;
+        }
+        span:first-child {
+          @apply text-[var(--color-primary)] uppercase font-semibold;
+        }
+        span:last-child {
+          @apply text-[var(--color-secondary)] font-normal capitalize;
+        }
+      }
+    }
   }
   .hero__cta_buttons {
     @apply inline-flex flex-wrap gap-4 items-center mt-8 md:mt-0;
