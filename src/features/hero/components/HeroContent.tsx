@@ -9,7 +9,7 @@ export default function HeroContent() {
           <Icon
             icon="ci:dot-04-l"
             style={{ fontSize: "1rem", marginRight: "4px" }}
-          />{" "}
+          />
           Available for consultation
         </span>
         <h1 className="hero__title">
