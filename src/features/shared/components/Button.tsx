@@ -17,7 +17,7 @@ export default function Button({
     badge: "bg-white border-1 text-[var(--color-secondary)]",
   };
 
-  const styles = `${baseStyles[variant]} ${className} text-base capitalized rounded-md px-8 py-4 font-semibold inline-flex items-center`;
+  const styles = `${baseStyles[variant]} ${className} text-base capitalized rounded-md px-8 py-4 font-semibold inline-flex items-center w-full md:w-fit justify-center`;
 
   if (href) {
     return (

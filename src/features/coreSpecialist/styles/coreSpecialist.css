@@ -12,7 +12,8 @@
     @apply text-[var(--color-text)] text-center;
   }
   .core-specialist__card_container {
-    @apply w-full grid grid-cols-5 gap-8;
+    @apply w-full grid md:grid-cols-5 gap-8;
+    /* swiper */
   }
   .core-specialist__card {
     @apply bg-[var(--color-surface-light)] rounded-md p-8 flex flex-col gap-4;
@@ -27,7 +28,8 @@
     }
   }
   .core-specialist__metrics {
-    @apply w-full grid grid-cols-3 gap-8;
+    /* gsap animation */
+    @apply w-full grid md:grid-cols-3 gap-8;
 
     .core-specialist__metrics_item {
       @apply text-center;

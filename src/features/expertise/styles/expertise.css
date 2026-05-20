@@ -1,10 +1,10 @@
 @reference "tailwindcss";
 
 .expertise {
-  @apply w-full  bg-[var(--color-surface)];
+  @apply w-full  bg-[var(--color-surface)] px-8;
 
   .expertise__container {
-    @apply flex max-w-7xl mx-auto gap-14;
+    @apply flex flex-col md:flex-row flex-col-reverse  max-w-7xl mx-auto gap-14;
     padding-top: clamp(40px, 10vw, 80px);
     padding-bottom: clamp(40px, 10vw, 80px);
 
@@ -20,11 +20,12 @@
       }
 
       .expertise__line {
-        @apply bg-[var(--color-secondary)] h-1 w-16;
+        @apply hidden md:block bg-[var(--color-secondary)] h-1 w-16;
       }
 
       .expertise__iso_certs {
-        @apply grid grid-cols-2 gap-4;
+        /* change to swiper */
+        @apply grid grid-cols-1 md:grid-cols-2 gap-4;
       }
 
       .expertise__desc {
