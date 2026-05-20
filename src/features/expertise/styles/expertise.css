@@ -13,20 +13,30 @@
     }
 
     .expertise__content {
-      @apply flex-1;
+      @apply flex-1 flex flex-col gap-10;
 
       .expertise__title {
-        @apply text-[var(--color-primary)] font-bold tracking-tight leading-tight;
+        @apply text-[var(--color-primary)] font-bold tracking-tight leading-tight relative inline-flex items-center gap-3;
       }
+
+      .expertise__line {
+        @apply bg-[var(--color-secondary)] h-1 w-16;
+      }
+
       .expertise__iso_certs {
         @apply grid grid-cols-2 gap-4;
       }
 
       .expertise__desc {
-        @apply text-[var(--color-text)];
+        @apply text-[var(--color-text)] mt-3;
       }
+
       .expertise__cert_badge {
         @apply inline-flex items-center gap-3 bg-white rounded-md px-4 py-3 text-[var(--color-primary)] font-semibold;
+      }
+
+      .expertise__link {
+        @apply inline-flex items-center gap-3 text-[var(--color-secondary)] font-semibold capitalize;
       }
     }
   }
