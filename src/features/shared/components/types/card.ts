@@ -1,5 +1,5 @@
 export type Card = {
-  children: Rect.ReactNode;
+  children: React.ReactNode;
   title: string;
   text: string;
-}
+};

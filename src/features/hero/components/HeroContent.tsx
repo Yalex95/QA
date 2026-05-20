@@ -32,7 +32,7 @@ export default function HeroContent() {
           <Button variant="secondary" href="#">
             Contact Me
           </Button>
-          <Button variant="badge" href="#">
+          <Button variant="badge" href="#" >
             Professional Credentials
             <Icon
               icon="qlementine-icons:certified-filled-16"

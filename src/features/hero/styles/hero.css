@@ -1,12 +1,12 @@
 @reference "tailwindcss";
 
 .hero {
-  @apply grid grid-cols-2 items-center min-h-screen w-full  mx-auto px-10 gap-y-4 lg:gap-y-0 gap-x-12  lg:max-w-6xl 2xl:max-w-7xl lg:px-0;
+  @apply lg:grid lg:grid-cols-2 items-center min-h-screen w-full  mx-auto px-8 lg:px-10 gap-y-4 lg:gap-y-0 lg:gap-x-12  lg:max-w-6xl 2xl:max-w-7xl lg:px-0;
   padding-top: clamp(40px, 10vw, 80px);
   padding-bottom: clamp(40px, 10vw, 80px);
-  
+
   .hero__content {
-    @apply flex flex-col gap-8;
+    @apply flex flex-col lg:gap-8 gap-6;
   }
 
   .hero__badge {
@@ -32,9 +32,9 @@
     @apply text-[var(--color-text)];
   }
   .hero__image {
-    @apply rounded-2xl;
+    @apply rounded-2xl hidden md:block;
   }
   .hero__cta_buttons {
-    @apply inline-flex flex-wrap gap-4 items-center;
+    @apply inline-flex flex-wrap gap-4 items-center mt-8 md:mt-0;
   }
 }
