@@ -1,0 +1,42 @@
+import type { ButtonProps } from "@/types/button";
+
+export default function Button({
+  variant,
+  children,
+  onClick,
+  href,
+  target,
+  disabled,
+  className = "",
+  icon,
+  type = "button",
+}: ButtonProps) {
+  const baseStyles = {
+    primary: "bg-[var(--color-primary)] text-white border-1",
+    secondary: "bg-white border-1 text-[var(--color-primary)]",
+    badge: "bg-white border-1 text-[var(--color-secondary)]",
+  };
+
+  const styles = `${baseStyles[variant]} ${className} text-base capitalized rounded-md px-8 py-4 font-semibold inline-flex items-center`;
+
+  if (href) {
+    return (
+      <a href={href} target={target} className={styles}>
+        {icon && <span className="mr-2 ">{icon}</span>}
+        {children}
+      </a>
+    );
+  }
+
+  return (
+    <button
+      onClick={onClick}
+      disabled={disabled}
+      type={type}
+      className={styles}
+    >
+      {icon && <span className="mr-2">{icon}</span>}
+      {children}
+    </button>
+  );
+}
