@@ -17,10 +17,10 @@
   @apply absolute  top-1/2 z-10  text-[var(--color-primary)] lg:hidden;
 }
 .button-next {
-  @apply -right-10;
+  @apply -right-5;
 }
 .button-prev {
-  @apply -left-10;
+  @apply -left-5;
 }
 .swiper-pagination {
   @apply relative mt-5;
