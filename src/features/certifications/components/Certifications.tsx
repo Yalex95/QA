@@ -1,5 +1,5 @@
 import "../styles/certifications.css";
-import CertificationsCard from "./CertificationsCard";
+import CertificationsCard, { type certProps } from "./CertificationsCard";
 export default function Certifications() {
   const CERTIFICATIONS: certProps[] = [
     {
@@ -41,8 +41,8 @@ export default function Certifications() {
       </header>
       <div className="cert_cards__grid">
         {CERTIFICATIONS.map((cert) => (
-        <CertificationsCard key={cert.id} {...cert} />
-      ))}
+          <CertificationsCard key={cert.id} {...cert} />
+        ))}
       </div>
     </section>
   );

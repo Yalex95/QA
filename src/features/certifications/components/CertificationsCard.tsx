@@ -56,7 +56,7 @@ export default function CertificationsCard({
         </Button>
         <Button variant="primary" href={link}>
           Download
-          <Icon icon="material-symbols:arrow-forward" className="ml-3" />
+          <Icon icon="material-symbols:download-2-rounded" className="ml-3" />
         </Button>
       </footer>
     </article>
