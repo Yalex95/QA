@@ -1,0 +1,50 @@
+@reference "tailwindcss";
+
+.certifications {
+  @apply w-full  bg-[var(--color-surface)] px-8 flex flex-col items-center justify-center gap-10;
+  padding-top: clamp(40px, 20vw, 80px);
+  padding-bottom: clamp(40px, 20vw, 80px);
+ 
+  .certifications__title {
+    @apply text-[var(--color-primary)] font-bold  lg:text-4xl text-center ;
+  }
+
+  .certifications__desc {
+  }
+  .cert_cards__grid {
+    @apply grid grid-cols-3 gap-10;
+    .cert-card {
+      @apply rounded-md shadow-md bg-white p-6 flex flex-col gap-10;
+
+      .cert-card__header {
+        @apply flex justify-between;
+        .cert-card__icon {
+          @apply bg-[var(--color-secondary-light)] text-[var(--color-secondary)] p-2 rounded-sm;
+        }
+        .cert-card__badge {
+          @apply bg-[var(--color-primary)] text-white uppercase h-fit px-3 py-1 rounded-md font-semibold text-xs;
+        }
+      }
+      .cert-card__content {
+        @apply flex flex-col gap-4;
+        .cert-card__title {
+          @apply text-[var(--color-primary)] font-bold text-xl;
+        }
+        .cert-card__meta {
+          .cert-card__item {
+            @apply inline-flex w-full justify-between;
+            .cert-card__label {
+              @apply text-[var(--color-text)];
+            }
+            .cert-card__value {
+              @apply text-[var(--color-primary)] font-semibold;
+            }
+          }
+        }
+      }
+      .cert-card__actions {
+        @apply flex gap-4;
+      }
+    }
+  }
+}
