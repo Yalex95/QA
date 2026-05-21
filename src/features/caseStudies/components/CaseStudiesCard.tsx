@@ -5,6 +5,7 @@ export type caseStudiesCardPropsType = {
   title: string;
   problem: string;
   action: string;
+  result: string;
 };
 export default function CaseStudiesCard({
   id,
