@@ -1,3 +1,3 @@
 export default function Certifications() {
-  return <section className="case-studies"></section>;
+  return <section className="certifications"></section>;
 }
