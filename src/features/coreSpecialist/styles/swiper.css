@@ -1,0 +1,27 @@
+@reference "tailwindcss";
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  /* Center slide text vertically */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-next,
+.button-prev {
+  @apply absolute  top-1/2 z-10  text-[var(--color-primary)] lg:hidden;
+}
+.button-next {
+  @apply -right-10;
+}
+.button-prev {
+  @apply -left-10;
+}
+.swiper-pagination {
+  @apply relative mt-5;
+}

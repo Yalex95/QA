@@ -15,7 +15,7 @@
     @apply w-full grid md:grid-cols-5 gap-8;
   }
   .core-specialist__card {
-    @apply bg-[var(--color-surface-light)] rounded-md p-8 flex flex-col gap-4;
+    @apply bg-[var(--color-surface-light)] h-full rounded-md p-8 flex flex-col gap-4;
     .core-specialist__card_icon {
       @apply w-8 h-8 text-[var(--color-secondary)];
     }

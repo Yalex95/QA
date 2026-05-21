@@ -1,6 +1,6 @@
 import "../styles/coreSpecialist.css";
-import CoreSpecialistCard from "./CoreSpecialistCard";
 import Metrics from "./Metrics";
+import SwiperContainer from "./swiper/index";
 export default function CoreSpecialist() {
   const specialist_list = [
     {
@@ -38,11 +38,12 @@ export default function CoreSpecialist() {
           and strategic safety implementation.
         </p>
       </div>
-      <div className="core-specialist__card_container">
+      {/* <div className="core-specialist__card_container">
         {specialist_list.map((card, index) => (
           <CoreSpecialistCard key={index} {...card} />
         ))}
-      </div>
+      </div> */}
+      <SwiperContainer slides={specialist_list} />
       <Metrics />
     </section>
   );
