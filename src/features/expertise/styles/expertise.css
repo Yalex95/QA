@@ -37,17 +37,14 @@
       }
     }
     .expertise__iso_icon {
-      @apply text-[var(--color-secondary)] w-10 h-10;
+      @apply text-[var(--color-secondary)] w-10 h-10 lg:w-5 lg:h-5;
     }
     .expertise__iso_certs_container {
       /* change to swiper */
       @apply w-full hidden md:grid lg:hidden grid-cols-1 md:grid-cols-4 gap-4;
-      .expertise__iso_icon {
-        @apply hidden;
-      }
     }
     .expertise__cert_badge {
-      @apply inline-flex md:flex md:flex-col text-center lg:inline-flex items-center gap-3 bg-white rounded-md px-4 py-3 text-[var(--color-primary)] font-semibold shadow-md;
+      @apply inline-flex md:flex text-xs  lg:inline-flex items-center gap-3 bg-white rounded-md px-4 py-3 text-[var(--color-primary)] font-semibold shadow-md;
     }
   }
 }

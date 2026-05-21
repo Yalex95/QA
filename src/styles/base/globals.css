@@ -18,7 +18,7 @@
   }
 
   p {
-    @apply text-base leading-7 text-gray-300;
+    @apply text-base leading-7 text-[var(--color-text)];
   }
 
   a {
