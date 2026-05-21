@@ -13,6 +13,7 @@ export default function CaseStudiesCard({
   title,
   problem,
   action,
+  result,
 }: caseStudiesCardPropsType) {
   return (
     <article className="case_study__card" key={id}>
@@ -42,7 +43,7 @@ export default function CaseStudiesCard({
           </div>
           <div className="case_study__card_result-highlight">
             <div className="kpi-grid">
-              <span className="kpi-item">kpi desc</span>
+              <span className="kpi-item">{result}</span>
             </div>
           </div>
         </section>
