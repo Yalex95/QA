@@ -25,7 +25,7 @@ type swiperTypes = {
 export default function SwiperContainer({ slides }: swiperTypes) {
   const swiperRef = useRef<SwiperType | null>(null);
   return (
-    <div className="w-full relative">
+    <div className="w-full relative px-10 lg:px-0">
       <Swiper
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
