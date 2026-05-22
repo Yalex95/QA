@@ -16,7 +16,7 @@
       @apply flex-1 flex flex-col gap-10 m-auto;
 
       .expertise__title {
-        @apply text-[var(--color-primary)] font-bold tracking-tight leading-tight relative inline-flex items-center gap-3 md:text-2xl;
+        @apply text-[var(--color-primary)] font-bold tracking-tight leading-tight relative inline-flex items-center gap-3 md:text-3xl lg:text-5xl;
       }
 
       .expertise__line {
