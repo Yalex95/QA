@@ -1,0 +1,27 @@
+@reference "tailwindcss";
+
+.footer {
+  @apply bg-[var(--color-primary)];
+  padding-top: clamp(40px, 10vw, 20px);
+  padding-bottom: clamp(40px, 10vw, 20px);
+  .footer__container {
+    @apply flex flex-col md:flex-row justify-between px-8  md:px-16 items-center gap-y-10 md:gap-0;
+  }
+  .footer__branding {
+    @apply font-bold  md:inline-flex gap-3 items-center;
+    img {
+      @apply w-14 h-14 md:w-16 md:h-16 m-auto;
+    }
+    .footer__copyright {
+      @apply text-base;
+    }
+  }
+  .footer__nav {
+    .footer__links {
+      @apply md:inline-flex gap-6;
+      li {
+        @apply block text-center my-4 md:my-0;
+      }
+    }
+  }
+}
