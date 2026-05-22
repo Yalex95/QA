@@ -1,0 +1,54 @@
+@reference "tailwindcss";
+
+.contact {
+  @apply w-full  bg-white px-8;
+  padding-top: clamp(40px, 20vw, 80px);
+  padding-bottom: clamp(40px, 20vw, 80px);
+  .contact__container {
+    @apply flex max-w-7xl mx-auto gap-x-14;
+    .contact__content {
+      @apply flex flex-col gap-10;
+      .contact__header {
+        .contact__title {
+          @apply text-[var(--color-primary)] font-bold mb-4;
+        }
+        .contact__description {
+          @apply text-lg;
+        }
+      }
+      .contact__info {
+        .contact__item {
+          @apply text-[var(--color-primary)] text-lg inline-flex w-full items-center gap-2;
+          .contact__icon {
+            @apply text-[var(--color-secondary)];
+          }
+        }
+      }
+      .contact__actions {
+        @apply flex gap-10;
+      }
+    }
+  }
+  .contact-support-card {
+    @apply bg-[var(--color-primary)] p-10 rounded-md flex flex-col items-center gap-10;
+    .contact-support-card__icon {
+      @apply bg-[#25d36563] rounded-full p-4;
+    }
+
+    .contact-support-card__content {
+      @apply text-center;
+      .contact-support-card__title {
+        @apply text-3xl font-bold text-white mb-4;
+      }
+    }
+    .contact-support-card__actions {
+      @apply w-full text-center;
+      .contact-support-card__button {
+        @apply bg-[#25D366] rounded-md text-white w-full flex text-xl items-center justify-center py-4 gap-2;
+      }
+      .contact-support-card__note {
+        @apply text-[var(--color-text)] text-xs ;
+      }
+    }
+  }
+}
