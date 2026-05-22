@@ -1,5 +1,6 @@
 import CaseStudies from "./features/caseStudies/components/CaseStudies";
 import Certifications from "./features/certifications/components/Certifications";
+import Contact from "./features/contact/components/Contact";
 
 import CoreSpecialist from "./features/coreSpecialist/components/CoreSpecialist";
 import Expertise from "./features/expertise/components/Expertise";
@@ -13,6 +14,7 @@ function App() {
       <CoreSpecialist />
       <CaseStudies />
       <Certifications />
+      <Contact />
     </>
   );
 }
