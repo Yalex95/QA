@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://estefany-qa-engineer.vercel.app/sitemal.xml
