@@ -1,12 +1,4 @@
-export type caseStudiesCardPropsType = {
-  id?: number;
-  badge: string;
-  image_link: string;
-  title: string;
-  problem: string;
-  action: string;
-  result: string;
-};
+
 export default function CaseStudiesCard({
   id,
   badge,

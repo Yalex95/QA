@@ -1,27 +1,19 @@
+import { EXPERTISE } from "@/data/cv";
 import { Icon } from "@iconify/react";
 import ExpertiseCertBadge from "./ExpertiseCertBadge";
 
-type expertiseProps = {
-  certifications: string[];
-};
-export default function ExpertiseContent({ certifications }: expertiseProps) {
+export default function ExpertiseContent() {
   return (
     <div className="expertise__content">
       <div>
         <h2 className="expertise__title">
           <span className="expertise__line"></span>
-          Expertise in Manufacturing & Engineering
+          {EXPERTISE.title}
         </h2>
-        <p className="expertise__desc">
-          Dedicated professional with over a decade of experience ensuring the
-          highest standards of safety and quality across complex industrial
-          environments. My approach integrates rigorous technical audits with
-          proactive safety cultures to minimize risk and maximize operational
-          efficiency.
-        </p>
+        <p className="expertise__desc">{EXPERTISE.desc}</p>
       </div>
       <div className="expertise__iso_certs ">
-        {certifications.map((cert, index) => (
+        {EXPERTISE.certifications.map((cert, index) => (
           <ExpertiseCertBadge key={index} certification={cert} />
         ))}
       </div>

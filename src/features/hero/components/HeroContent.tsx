@@ -1,3 +1,4 @@
+import { HERO } from "@/data/cv";
 import { Icon } from "@iconify/react";
 import Button from "../../shared/components/Button";
 
@@ -13,26 +14,22 @@ export default function HeroContent() {
           Available for consultation
         </span>
         <h1 className="hero__title">
-          <span className="hero__title-line">
-            Industrial QA & HS&E Specialist |
-          </span>
-          <span className="hero__title-line">
-            Compliance, Safety & Improvement
-          </span>
+          {HERO.title.map((item, index) => (
+            <span key={index} className="hero__title-line">
+              {item}
+            </span>
+          ))}
         </h1>
-        <p className="hero__description">
-          Driving quality systems, safety regulations, and risk management with
-          precision and reliability across global industrial sectors.
-        </p>
+        <p className="hero__description">{HERO.description}</p>
         <div className="hero__cta_buttons">
-          <Button variant="primary" href="#">
+          {/* <Button variant="primary" href="#">
             View Proyects
             <Icon icon="material-symbols:arrow-forward" className="ml-3" />
-          </Button>
-          <Button variant="secondary" href="#">
+          </Button> */}
+          <Button variant="primary" href="#contact">
             Contact Me
           </Button>
-          <Button variant="badge" href="#" >
+          <Button variant="badge" href="#credentials">
             Professional Credentials
             <Icon
               icon="qlementine-icons:certified-filled-16"

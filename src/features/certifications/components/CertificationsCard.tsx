@@ -1,15 +1,8 @@
+import type { certProps } from "@/data/cv";
 import Button from "@/features/shared/components/Button";
 import { Icon } from "@iconify/react";
 
-export type certProps = {
-  type: string;
-  name: string;
-  issuing_org: string;
-  year: string;
-  id: string;
-  link: string;
-  icon: string;
-};
+
 export default function CertificationsCard({
   type,
   name,
