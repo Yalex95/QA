@@ -202,7 +202,6 @@ export const certification_section: {
 export type ContactSection = {
   title: string;
   paragraph: string;
-  consultation: string;
   mail: string;
   location: string;
   cv_link: string;

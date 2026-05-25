@@ -78,7 +78,7 @@ export default function Contact() {
             </a>
 
             <small className="contact-support-card__note">
-              {contactSeccion.disclamer}
+              {contactSeccion.disclaimer}
             </small>
           </div>
         </aside>
