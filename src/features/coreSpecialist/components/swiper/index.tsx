@@ -9,20 +9,13 @@ import "../../styles/swiper.css";
 import CoreSpecialistCard from "../CoreSpecialistCard";
 
 // import required modules
+import { SPECIALIST_LIST } from "@/data/cv";
 import { Icon } from "@iconify/react";
 import { useRef } from "react";
 import type { Swiper as SwiperType } from "swiper";
 import { Navigation } from "swiper/modules";
-type SlidesType = {
-  icon: string;
-  title: string;
-  text: string;
-};
-type swiperTypes = {
-  slides: SlidesType[];
-};
 
-export default function SwiperContainer({ slides }: swiperTypes) {
+export default function SwiperContainer() {
   const swiperRef = useRef<SwiperType | null>(null);
   return (
     <div className="w-full relative px-10 lg:px-0">
@@ -50,7 +43,7 @@ export default function SwiperContainer({ slides }: swiperTypes) {
         modules={[Navigation]}
         className="mySwiper"
       >
-        {slides.map((card, index) => (
+        {SPECIALIST_LIST.map((card, index) => (
           <SwiperSlide>
             <CoreSpecialistCard key={index} {...card} />
           </SwiperSlide>
