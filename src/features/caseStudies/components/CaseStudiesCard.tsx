@@ -1,3 +1,4 @@
+import type { caseStudiesItem } from "@/data/cv";
 
 export default function CaseStudiesCard({
   id,
@@ -7,7 +8,7 @@ export default function CaseStudiesCard({
   problem,
   action,
   result,
-}: caseStudiesCardPropsType) {
+}: caseStudiesItem) {
   return (
     <article className="case_study__card" key={id}>
       <header>

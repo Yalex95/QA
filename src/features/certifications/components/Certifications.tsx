@@ -1,4 +1,4 @@
-import { certification_section } from "@/data/cv";
+import { certification_section, type certProps } from "@/data/cv";
 import "../styles/certifications.css";
 import CertificationsCard from "./CertificationsCard";
 export default function Certifications() {
@@ -11,7 +11,7 @@ export default function Certifications() {
         </p>
       </header>
       <div className="cert_cards__grid">
-        {certification_section.certifications.map((cert) => (
+        {certification_section.certifications.map((cert: certProps) => (
           <CertificationsCard key={cert.id} {...cert} />
         ))}
       </div>

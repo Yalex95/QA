@@ -18,6 +18,7 @@ export const HERO: Hero = {
 type Expertise = {
   title: string;
   certifications: string[];
+  desc: string;
 };
 export const EXPERTISE: Expertise = {
   title: "Expertise in Manufacturing & Engineering",
@@ -68,6 +69,7 @@ export const SPECIALIST_LIST: SpecialistList[] = [
 type CoreSpecialist = {
   title: string;
   paragraph: string;
+  specialistList: SpecialistList[];
 };
 export const CORE_SPECIALIST: CoreSpecialist = {
   title: "Core Specialist Expertise",
@@ -82,7 +84,7 @@ type Metrics = {
   metric: string;
   impact: string;
 };
-export const METRICS_IMPACT: Metrics = [
+export const METRICS_IMPACT: Metrics[] = [
   { id: 1, metric: "35%", impact: "Reduction in Workplace Incidents" },
   { id: 2, metric: "100%", impact: "Audit Compliance Rate" },
   { id: 3, metric: "15+", impact: "Major Industrial Audits Conducted" },
@@ -188,7 +190,7 @@ export const CERTIFICATIONS: certProps[] = [
 export const certification_section: {
   title: string;
   paragraph: string;
-  certificaitons: certProps[];
+  certifications: certProps[];
 } = {
   title: "Certifications & Credentials",
   paragraph:
@@ -222,7 +224,7 @@ export const contactSeccion: ContactSection = {
   support_title: "Professional Instant Support",
   support_p:
     "Get immediate responses regarding safety audits, quality system implementations, or general consultations.",
-  disclamer: "Typically responds within 1 hour during business hours",
+  disclaimer: "Typically responds within 1 hour during business hours",
 };
 
 //---------------------------------------- FOOTER
