@@ -7,7 +7,7 @@ export default function CaseStudies() {
   const { t } = useTranslation();
 
   return (
-    <section className="case-studies">
+    <section id="case-studies" className="case-studies">
       <div className="case-studies__container">
         <div className="flex justify-between mb-12 items-end">
           <header className="case-studies__header">

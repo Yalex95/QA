@@ -4,12 +4,11 @@ import type {
 } from "@/features/shared/components/types/button";
 
 const baseStyles: Record<ButtonVariant, string> = {
-  primary: "bg-[var(--color-primary)] text-white border-1",
-  secondary: "bg-white border-1 text-[var(--color-primary)]",
-  badge: "bg-white border-1 text-[var(--color-secondary)]",
+  primary:
+    "bg-[var(--color-primary)] text-white border-1 hover:shadow-md border-[var(--color-primary)]",
+  secondary: "bg-white border-1 text-[var(--color-primary)] hover:shadow-md",
+  badge: "bg-white border-1 text-[var(--color-secondary)] hover:shadow-md",
 };
-
-
 
 export default function Button({
   variant,
@@ -22,7 +21,7 @@ export default function Button({
   icon,
   type = "button",
 }: ButtonProps) {
-  const styles = `${baseStyles[variant]} ${className} text-base capitalized rounded-md px-8 py-4 font-semibold inline-flex items-center w-full md:w-fit justify-center capitalize`;
+  const styles = `${baseStyles[variant]} ${className} text-base capitalized rounded-md px-8 py-4 font-semibold inline-flex items-center w-full md:w-fit justify-center capitalize cursor-pointer`;
 
   if (href) {
     return (

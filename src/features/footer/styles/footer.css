@@ -18,7 +18,7 @@
   }
   .footer__nav {
     .footer__links {
-      @apply md:inline-flex gap-6;
+      @apply md:inline-flex gap-6 capitalize;
       li {
         @apply block text-center my-4 md:my-0;
       }

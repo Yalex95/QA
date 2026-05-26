@@ -1,7 +1,7 @@
 @reference "tailwindcss";
 
 .case-studies {
-  @apply bg-[var(--color-primary)] w-full px-8;
+  @apply bg-[var(--color-primary)] w-full px-8 scroll-mt-24;
   padding-top: clamp(40px, 20vw, 80px);
   padding-bottom: clamp(40px, 20vw, 80px);
 
@@ -14,7 +14,7 @@
       }
     }
     a {
-      @apply  items-center gap-4 text-[var(--color-secondary)] font-semibold capitalize  ;
+      @apply items-center gap-4 text-[var(--color-secondary)] font-semibold capitalize;
     }
   }
   .case-studies__featured_projects {

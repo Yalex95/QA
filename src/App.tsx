@@ -8,6 +8,7 @@ import Expertise from "./features/expertise/components/Expertise";
 import Footer from "./features/footer/components/Footer";
 import Hero from "./features/hero/components/Hero";
 import Navbar from "./features/navbar/components/Navbar";
+import { contactSeccion } from "./data/cv";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
       </main>
       <a
         className="fixed right-6 bottom-6 rounded-full bg-[#25D366] p-3 z-10"
-        href="#"
+        href={contactSeccion.wa}
       >
         <Icon icon="mdi:whatsapp" className="text-white w-10 h-10" />
       </a>

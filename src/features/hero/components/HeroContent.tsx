@@ -30,7 +30,7 @@ export default function HeroContent() {
           <Button variant="primary" href="#contact">
             {t("hero.contact_me", "Contact Me")}
           </Button>
-          <Button variant="badge" href="#credentials">
+          <Button variant="badge" href="#certifications">
             {t("hero.profesional_cred", "Professional Credentials")}
             <Icon
               icon="qlementine-icons:certified-filled-16"

@@ -1,7 +1,7 @@
 @reference "tailwindcss";
 
 .certifications {
-  @apply w-full  bg-[var(--color-surface)] px-8 flex flex-col items-center justify-center gap-10;
+  @apply w-full  bg-[var(--color-surface)] px-8 flex flex-col items-center justify-center gap-10 scroll-mt-24;
   padding-top: clamp(40px, 20vw, 80px);
   padding-bottom: clamp(40px, 20vw, 80px);
 

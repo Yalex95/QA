@@ -6,7 +6,7 @@ export default function Certifications() {
   const { t } = useTranslation();
 
   return (
-    <section className="certifications">
+    <section id="certifications" className="certifications">
       <header>
         <h2 className="certifications__title">
           {t(certification_section.title)}

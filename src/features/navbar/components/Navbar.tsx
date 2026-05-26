@@ -12,7 +12,7 @@ export default function Navbar() {
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
-    localStorage.setItem("language", lng); // Guardar preferencia
+    localStorage.setItem("language", lng);
   };
 
   const currentLanguage = i18n.language;
@@ -51,22 +51,24 @@ export default function Navbar() {
         >
           <ul className="nav-list">
             <li>
-              <a href="#about">{t("nav.about")}</a>
+              <a className="nav-link" href="#hero">{t("nav.about")}</a>
             </li>
 
             <li>
-              <a href="#expertise">{t("nav.expertise")}</a>
+              <a className="nav-link" href="#expertise">{t("nav.expertise")}</a>
             </li>
 
             <li>
-              <a href="#projects">{t("nav.projects")}</a>
+              <a className="nav-link" href="#case-studies">{t("nav.projects")}</a>
             </li>
 
             <li>
-              <a href="#contact">{t("nav.certifications")}</a>
+              <a className="nav-link" href="#certifications">{t("nav.certifications")}</a>
             </li>
             <li>
-              <Button variant="primary">{t("nav.download_cv")}</Button>
+              <Button variant="primary" href="#contact">
+                {t("hero.contact_me", "Contact Me")}
+              </Button>
             </li>
             {/* Language Toggle */}
             <li className="language-toggle">

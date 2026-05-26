@@ -210,6 +210,11 @@ export type ContactSection = {
   support_p: string; // Clave de traducción
   disclaimer: string; // Clave de traducción
 };
+const phone = "5212345678";
+
+const message = encodeURIComponent("Hola, vi su página y me interesa obtener más información sobre sus servicios.");
+
+const whatsappLink = `https://wa.me/${phone}?text=${message}`;
 
 export const contactSeccion: ContactSection = {
   title: "contact.title",
@@ -217,8 +222,8 @@ export const contactSeccion: ContactSection = {
   mail: "qa@gmail.com",
   location: "Tijuana, BC Mexico",
   cv_link: "#",
-  linkedIn: "#",
-  wa: "",
+  linkedIn: "https://www.linkedin.com/in/",
+  wa: whatsappLink,
   support_title: "contact.support_title",
   support_p: "contact.support_p",
   disclaimer: "contact.disclaimer",
