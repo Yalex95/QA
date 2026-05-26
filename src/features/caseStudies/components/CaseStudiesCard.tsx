@@ -1,4 +1,5 @@
 import type { caseStudiesItem } from "@/data/cv";
+import { useTranslation } from "react-i18next";
 
 export default function CaseStudiesCard({
   id,
@@ -9,23 +10,28 @@ export default function CaseStudiesCard({
   action,
   result,
 }: caseStudiesItem) {
+  const { t } = useTranslation();
   return (
     <article className="case_study__card" key={id}>
       <header>
         <div className="case_study__card_badge">
-          <span>{badge}</span>
+          <span>{t(badge)}</span>
         </div>
-        <img src={image_link} alt={title} className="case_study__card_image" />
+        <img
+          src={image_link}
+          alt={t(title)}
+          className="case_study__card_image"
+        />
       </header>
       <div className="case_study__card_content">
-        <h3>{title}</h3>
+        <h3>{t(title)}</h3>
         <section className="case_study__card_block-text">
           <h4>problem</h4>
-          <p>{problem}</p>
+          <p>{t(problem)}</p>
         </section>
         <section className="case_study__card_block-text border-b border-[var(--color-primary)] pb-4">
           <h4>Action</h4>
-          <p>{action}</p>
+          <p>{t(action)}</p>
         </section>
 
         <section
@@ -37,7 +43,7 @@ export default function CaseStudiesCard({
           </div>
           <div className="case_study__card_result-highlight">
             <div className="kpi-grid">
-              <span className="kpi-item">{result}</span>
+              <span className="kpi-item">{t(result)}</span>
             </div>
           </div>
         </section>

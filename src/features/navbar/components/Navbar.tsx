@@ -1,12 +1,21 @@
 import Button from "@/features/shared/components/Button";
+import i18n from "@/i18n";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Logo from "../../footer/assets/qa.webp";
 import "../styles/navbar.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    localStorage.setItem("language", lng); // Guardar preferencia
+  };
+
+  const currentLanguage = i18n.language;
   return (
     <header className="site-header">
       <div className="container">
@@ -42,22 +51,40 @@ export default function Navbar() {
         >
           <ul className="nav-list">
             <li>
-              <a href="#home">About</a>
+              <a href="#about">{t("nav.about")}</a>
             </li>
 
             <li>
-              <a href="#about">Expertise</a>
+              <a href="#expertise">{t("nav.expertise")}</a>
             </li>
 
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects">{t("nav.projects")}</a>
             </li>
 
             <li>
-              <a href="#contact">Certifications</a>
+              <a href="#contact">{t("nav.certifications")}</a>
             </li>
             <li>
-              <Button variant="primary">Download CV</Button>
+              <Button variant="primary">{t("nav.download_cv")}</Button>
+            </li>
+            {/* Language Toggle */}
+            <li className="language-toggle">
+              <button
+                onClick={() => changeLanguage("en")}
+                className={`lang-btn ${currentLanguage === "en" ? "active" : ""}`}
+                aria-label="English"
+              >
+                🇺🇸 EN
+              </button>
+              <span className="lang-separator">|</span>
+              <button
+                onClick={() => changeLanguage("es")}
+                className={`lang-btn ${currentLanguage === "es" ? "active" : ""}`}
+                aria-label="Español"
+              >
+                🇪🇸 ES
+              </button>
             </li>
           </ul>
         </nav>

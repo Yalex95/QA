@@ -1,7 +1,7 @@
 import type { certProps } from "@/data/cv";
 import Button from "@/features/shared/components/Button";
 import { Icon } from "@iconify/react";
-
+import { useTranslation } from "react-i18next";
 
 export default function CertificationsCard({
   type,
@@ -12,6 +12,8 @@ export default function CertificationsCard({
   link,
   icon,
 }: certProps) {
+  const { t } = useTranslation();
+
   return (
     <article className="cert-card">
       <header className="cert-card__header">
@@ -19,25 +21,31 @@ export default function CertificationsCard({
           <Icon icon={icon} className="w-8 h-8" />
         </div>
 
-        <span className="cert-card__badge">{type}</span>
+        <span className="cert-card__badge">{t(type)}</span>
       </header>
 
       <section className="cert-card__content">
-        <h3 className="cert-card__title">{name}</h3>
+        <h3 className="cert-card__title">{t(name)}</h3>
 
         <div className="cert-card__meta">
           <div className="cert-card__item">
-            <span className="cert-card__label">Issuing Org:</span>
-            <span className="cert-card__value">{issuing_org}</span>
+            <span className="cert-card__label">
+              {t("certifications_section.issuing_org")}
+            </span>
+            <span className="cert-card__value">{t(issuing_org)}</span>
           </div>
 
           <div className="cert-card__item">
-            <span className="cert-card__label">Year:</span>
+            <span className="cert-card__label">
+              {t("certifications_section.year")}
+            </span>
             <span className="cert-card__value">{year}</span>
           </div>
 
           <div className="cert-card__item">
-            <span className="cert-card__label">Credential ID:</span>
+            <span className="cert-card__label">
+              {t("certifications_section.credential_id")}
+            </span>
             <span className="cert-card__value">{id}</span>
           </div>
         </div>
@@ -45,10 +53,10 @@ export default function CertificationsCard({
 
       <footer className="cert-card__actions">
         <Button variant="secondary" href={link}>
-          View Certificate
+          {t("certifications_section.view_cert")}
         </Button>
         <Button variant="primary" href={link}>
-          Download
+          {t("certifications_section.download")}
           <Icon icon="material-symbols:download-2-rounded" className="ml-3" />
         </Button>
       </footer>

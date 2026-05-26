@@ -1,166 +1,166 @@
 import image from "../features/caseStudies/assets/Refinery project.png";
+
 //---------------------------------------- HERO
 type Hero = {
-  title: string[];
-  description: string;
+  title: string[]; // Ahora serán claves de traducción
+  description: string; // Clave de traducción
 };
 
 export const HERO: Hero = {
   title: [
-    "Industrial QA & HS&E Specialist |",
-    "Compliance, Safety & Improvement",
+    "hero.title.0", // "Industrial QA & HS&E Specialist |"
+    "hero.title.1", // "Compliance, Safety & Improvement"
   ],
-  description:
-    "Driving quality systems, safety regulations, and risk management with precision and reliability across global industrial sectors.",
+  description: "hero.description",
 };
 
-//---------------------------------------- EXPERTICE
+//---------------------------------------- EXPERTISE
 type Expertise = {
-  title: string;
-  certifications: string[];
-  desc: string;
+  title: string; // Clave de traducción
+  certifications: string[]; // Array de claves
+  desc: string; // Clave de traducción
 };
+
 export const EXPERTISE: Expertise = {
-  title: "Expertise in Manufacturing & Engineering",
-  desc: "Dedicated professional with over a decade of experience ensuring the highest standards of safety and quality across complex industrial environments. My approach integrates rigorous technical audits with proactive safety cultures to minimize risk and maximize operational efficiency.",
+  title: "expertise.title",
+  desc: "expertise.desc",
   certifications: [
-    "ISO 9001: Quality Management",
-    "ISO 14001: Environmental",
-    "ISO 45001: Ocupational Healt",
-    "ISO 13485: Medical devices",
+    "expertise.certifications.0", // ISO 9001
+    "expertise.certifications.1", // ISO 14001
+    "expertise.certifications.2", // ISO 45001
+    "expertise.certifications.3", // ISO 13485
   ],
 };
 
 // ---------------------------------------- Core Specialist
 type SpecialistList = {
   icon: string;
-  title: string;
-  text: string;
+  title: string; // Clave de traducción
+  text: string; // Clave de traducción
 };
 
 export const SPECIALIST_LIST: SpecialistList[] = [
   {
     icon: "material-symbols:fact-check-outline",
-    title: "Quality Assurance & Control",
-    text: "Implementing robust QA frameworks for zero-defect manufacturing.",
+    title: "core_specialist.specialist_list.0.title",
+    text: "core_specialist.specialist_list.0.text",
   },
   {
     icon: "icon-park-outline:caution",
-    title: "Risk Assessment & Analysis",
-    text: "Identifying and mitigating operational hazards before they occur.",
+    title: "core_specialist.specialist_list.1.title",
+    text: "core_specialist.specialist_list.1.text",
   },
   {
     icon: "streamline:justice-hammer-remix",
-    title: "Regulatory Compliance",
-    text: "Navigating complex legal and industry- specific regulations.",
+    title: "core_specialist.specialist_list.2.title",
+    text: "core_specialist.specialist_list.2.text",
   },
   {
     icon: "ic:baseline-fact-check",
-    title: "Safety Training & Audits",
-    text: "Comprehensive internal audits and specialized staff training.",
+    title: "core_specialist.specialist_list.3.title",
+    text: "core_specialist.specialist_list.3.text",
   },
   {
     icon: "carbon:growth",
-    title: "Continuous Improvement",
-    text: "Lean and Six Sigma methodologies for operational excellence.",
+    title: "core_specialist.specialist_list.4.title",
+    text: "core_specialist.specialist_list.4.text",
   },
 ];
 
 type CoreSpecialist = {
-  title: string;
-  paragraph: string;
+  title: string; // Clave de traducción
+  paragraph: string; // Clave de traducción
   specialistList: SpecialistList[];
 };
+
 export const CORE_SPECIALIST: CoreSpecialist = {
-  title: "Core Specialist Expertise",
-  paragraph:
-    " Providing end-to-end industrial solutions through technical mastery and strategic safety implementation.",
+  title: "core_specialist.title",
+  paragraph: "core_specialist.paragraph",
   specialistList: SPECIALIST_LIST,
 };
 
 // Metrics
 type Metrics = {
   id: number;
-  metric: string;
-  impact: string;
+  metric: string; // Mantiene el valor numérico (35%, 100%, etc.)
+  impact: string; // Clave de traducción
 };
+
 export const METRICS_IMPACT: Metrics[] = [
-  { id: 1, metric: "35%", impact: "Reduction in Workplace Incidents" },
-  { id: 2, metric: "100%", impact: "Audit Compliance Rate" },
-  { id: 3, metric: "15+", impact: "Major Industrial Audits Conducted" },
+  { id: 1, metric: "35%", impact: "metrics_impact.0.impact" },
+  { id: 2, metric: "100%", impact: "metrics_impact.1.impact" },
+  { id: 3, metric: "15+", impact: "metrics_impact.2.impact" },
 ];
 
 export type Profile = {
   hero: Hero;
   experience: Expertise;
 };
+
 export const PROFILE_INFO: Profile = {
   hero: HERO,
   experience: EXPERTISE,
 };
+
 //---------------------------------------- CASE STUDIES
 export type caseStudiesItem = {
   id?: number;
-  badge: string;
+  badge: string; // Clave de traducción
   image_link: string;
-  title: string;
-  problem: string;
-  action: string;
-  result: string;
+  title: string; // Clave de traducción
+  problem: string; // Clave de traducción
+  action: string; // Clave de traducción
+  result: string; // Clave de traducción
 };
 
 export const CASE_STUDIES: caseStudiesItem[] = [
   {
     id: 1,
-    badge: "Oil & Gas",
+    badge: "case_studies.items.0.badge",
     image_link: image,
-    title: "Refinery HS&E Systems Overhaul",
-    problem:
-      "Increasing minor incidents and outdated risk reporting mechanisms leading to production delays.",
-    action:
-      "Implemented a real-time digital hazard reporting system and localized safety training workshops.",
-    result: "40% drop in incidents within 6 months. 100% staff adoption rate.",
+    title: "case_studies.items.0.title",
+    problem: "case_studies.items.0.problem",
+    action: "case_studies.items.0.action",
+    result: "case_studies.items.0.result",
   },
   {
     id: 2,
-    badge: "Manufacturing",
+    badge: "case_studies.items.1.badge",
     image_link: image,
-
-    title: "Automotive Quality Control Optimization",
-    problem:
-      "High rejection rates at the final assembly stage causing significant material waste.",
-    action:
-      "Deployed Lean Six Sigma DMAIC process and upgraded station-level QA testing equipment.",
-    result:
-      "Reduced scrap rate by 22%. Annual savings of $450k in material costs.",
+    title: "case_studies.items.1.title",
+    problem: "case_studies.items.1.problem",
+    action: "case_studies.items.1.action",
+    result: "case_studies.items.1.result",
   },
 ];
+
 type case_studies_type = {
-  title: string;
-  paragraph: string;
+  title: string; // Clave de traducción
+  paragraph: string; // Clave de traducción
   case_studies: caseStudiesItem[];
 };
+
 export const case_studies_data: case_studies_type = {
-  title: "Case Studies",
-  paragraph:
-    "Real-world solutions delivered across diverse industrial landscapes.",
+  title: "case_studies.title",
+  paragraph: "case_studies.paragraph",
   case_studies: CASE_STUDIES,
 };
+
 //---------------------------------------- CERTIFICATIONS
 export type certProps = {
-  type: string;
-  name: string;
-  issuing_org: string;
-  year: string;
-  id: string;
-  link: string;
-  icon: string;
+  type: string; // Clave de traducción
+  name: string; // Clave de traducción
+  issuing_org: string; // Mantiene valor (IRCA)
+  year: string; // Mantiene valor
+  id: string; // Mantiene valor
+  link: string; // Mantiene valor
+  icon: string; // Mantiene valor
 };
 
 export const CERTIFICATIONS: certProps[] = [
   {
-    type: "ISO",
-    name: "ISO 9001:2015 Lead Auditor",
+    type: "certifications_section.certifications.0.type",
+    name: "certifications_section.certifications.0.name",
     issuing_org: "IRCA",
     year: "2022",
     id: "QA-9001-8841-X",
@@ -168,8 +168,8 @@ export const CERTIFICATIONS: certProps[] = [
     icon: "iconamoon:certificate-badge",
   },
   {
-    type: "OSHA",
-    name: "OSHA 30-Hour Outreach",
+    type: "certifications_section.certifications.1.type",
+    name: "certifications_section.certifications.1.name",
     issuing_org: "IRCA",
     year: "2022",
     id: "QA-9001-8842-X",
@@ -177,8 +177,8 @@ export const CERTIFICATIONS: certProps[] = [
     icon: "tdesign:secured",
   },
   {
-    type: "Safety",
-    name: "ISO 45001 Internal Auditor",
+    type: "certifications_section.certifications.2.type",
+    name: "certifications_section.certifications.2.name",
     issuing_org: "IRCA",
     year: "2022",
     id: "QA-9001-8843-X",
@@ -188,42 +188,38 @@ export const CERTIFICATIONS: certProps[] = [
 ];
 
 export const certification_section: {
-  title: string;
-  paragraph: string;
+  title: string; // Clave de traducción
+  paragraph: string; // Clave de traducción
   certifications: certProps[];
 } = {
-  title: "Certifications & Credentials",
-  paragraph:
-    "Verified professional standards and international industry qualifications.",
+  title: "certifications_section.title",
+  paragraph: "certifications_section.paragraph",
   certifications: CERTIFICATIONS,
 };
 
 //---------------------------------------- CONTACT
 export type ContactSection = {
-  title: string;
-  paragraph: string;
-  mail: string;
-  location: string;
-  cv_link: string;
-  linkedIn: string;
-  wa: string;
-  support_title: string;
-  support_p: string;
-  disclaimer: string;
+  title: string; // Clave de traducción
+  paragraph: string; // Clave de traducción
+  mail: string; // Mantiene valor
+  location: string; // Mantiene valor
+  cv_link: string; // Mantiene valor
+  linkedIn: string; // Mantiene valor
+  wa: string; // Mantiene valor
+  support_title: string; // Clave de traducción
+  support_p: string; // Clave de traducción
+  disclaimer: string; // Clave de traducción
 };
+
 export const contactSeccion: ContactSection = {
-  title: "Let's Discuss Your Next Compliance Goal",
-  paragraph:
-    " Looking to enhance your safety protocols or implement a global quality system? Reach out for a consultation.",
+  title: "contact.title",
+  paragraph: "contact.paragraph",
   mail: "qa@gmail.com",
   location: "Tijuana, BC Mexico",
   cv_link: "#",
   linkedIn: "#",
   wa: "",
-  support_title: "Professional Instant Support",
-  support_p:
-    "Get immediate responses regarding safety audits, quality system implementations, or general consultations.",
-  disclaimer: "Typically responds within 1 hour during business hours",
+  support_title: "contact.support_title",
+  support_p: "contact.support_p",
+  disclaimer: "contact.disclaimer",
 };
-
-//---------------------------------------- FOOTER

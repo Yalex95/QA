@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "about": "About",
+    "expertise": "Expertise",
+    "projects": "Projects",
+    "certifications": "Certifications",
+    "download_cv": "Download CV"
+  },
+  "hero": {
+    "title": [
+      "Industrial QA & HS&E Specialist |",
+      "Compliance, Safety & Improvement"
+    ],
+    "description": "Driving quality systems, safety regulations, and risk management with precision and reliability across global industrial sectors.",
+    "contact_me": "contact me",
+    "available": "available for consultation",
+    "profesional_cred": "professional credentials",
+    "certified_prof": "certified professional"
+  },
+
+  "expertise": {
+    "title": "Expertise in Manufacturing & Engineering",
+    "desc": "Dedicated professional with over a decade of experience ensuring the highest standards of safety and quality across complex industrial environments. My approach integrates rigorous technical audits with proactive safety cultures to minimize risk and maximize operational efficiency.",
+    "certifications": [
+      "ISO 9001: Quality Management",
+      "ISO 14001: Environmental",
+      "ISO 45001: Occupational Health",
+      "ISO 13485: Medical Devices"
+    ],
+    "read_professional_bio": "read professional bio"
+  },
+
+  "core_specialist": {
+    "title": "Core Specialist Expertise",
+    "paragraph": "Providing end-to-end industrial solutions through technical mastery and strategic safety implementation.",
+
+    "specialist_list": [
+      {
+        "icon": "material-symbols:fact-check-outline",
+        "title": "Quality Assurance & Control",
+        "text": "Implementing robust QA frameworks for zero-defect manufacturing."
+      },
+      {
+        "icon": "icon-park-outline:caution",
+        "title": "Risk Assessment & Analysis",
+        "text": "Identifying and mitigating operational hazards before they occur."
+      },
+      {
+        "icon": "streamline:justice-hammer-remix",
+        "title": "Regulatory Compliance",
+        "text": "Navigating complex legal and industry-specific regulations."
+      },
+      {
+        "icon": "ic:baseline-fact-check",
+        "title": "Safety Training & Audits",
+        "text": "Comprehensive internal audits and specialized staff training."
+      },
+      {
+        "icon": "carbon:growth",
+        "title": "Continuous Improvement",
+        "text": "Lean and Six Sigma methodologies for operational excellence."
+      }
+    ]
+  },
+
+  "metrics_impact": [
+    {
+      "id": 1,
+      "metric": "35%",
+      "impact": "Reduction in Workplace Incidents"
+    },
+    {
+      "id": 2,
+      "metric": "100%",
+      "impact": "Audit Compliance Rate"
+    },
+    {
+      "id": 3,
+      "metric": "15+",
+      "impact": "Major Industrial Audits Conducted"
+    }
+  ],
+
+  "case_studies": {
+    "title": "Case Studies",
+    "paragraph": "Real-world solutions delivered across diverse industrial landscapes.",
+    "view_all_projects": "view all projects",
+    "items": [
+      {
+        "id": 1,
+        "badge": "Oil & Gas",
+        "title": "Refinery HS&E Systems Overhaul",
+        "problem": "Increasing minor incidents and outdated risk reporting mechanisms leading to production delays.",
+        "action": "Implemented a real-time digital hazard reporting system and localized safety training workshops.",
+        "result": "40% drop in incidents within 6 months. 100% staff adoption rate."
+      },
+      {
+        "id": 2,
+        "badge": "Manufacturing",
+        "title": "Automotive Quality Control Optimization",
+        "problem": "High rejection rates at the final assembly stage causing significant material waste.",
+        "action": "Deployed Lean Six Sigma DMAIC process and upgraded station-level QA testing equipment.",
+        "result": "Reduced scrap rate by 22%. Annual savings of $450k in material costs."
+      }
+    ]
+  },
+
+  "certifications_section": {
+    "title": "Certifications & Credentials",
+    "paragraph": "Verified professional standards and international industry qualifications.",
+    "download": "Download",
+    "view_cert": "view certificate",
+    "issuing_org": "Issuing Org:",
+    "year": "Year:",
+    "credential_id": "Credential ID:",
+    "certifications": [
+      {
+        "type": "ISO",
+        "name": "ISO 9001:2015 Lead Auditor",
+        "issuing_org": "IRCA",
+        "year": "2022",
+        "id": "QA-9001-8841-X"
+      },
+      {
+        "type": "OSHA",
+        "name": "OSHA 30-Hour Outreach",
+        "issuing_org": "IRCA",
+        "year": "2022",
+        "id": "QA-9001-8842-X"
+      },
+      {
+        "type": "Safety",
+        "name": "ISO 45001 Internal Auditor",
+        "issuing_org": "IRCA",
+        "year": "2022",
+        "id": "QA-9001-8843-X"
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Let's Discuss Your Next Compliance Goal",
+    "paragraph": "Looking to enhance your safety protocols or implement a global quality system? Reach out for a consultation.",
+    "mail": "qa@gmail.com",
+    "location": "Tijuana, BC Mexico",
+    "support_title": "Professional Instant Support",
+    "support_p": "Get immediate responses regarding safety audits, quality system implementations, or general consultations.",
+    "disclaimer": "Typically responds within 1 hour during business hours",
+    "download_cv": "Download CV",
+    "linkedIn": "linkedIn Profile",
+    "contact_wa": "Contact me via WhatsApp"
+  },
+  "footer": {
+    "privacy": "privacy policy",
+    "terms": "Terms of service"
+  }
+}
