@@ -1,7 +1,7 @@
 @reference "tailwindcss";
 
 .hero {
-  @apply grid md:grid-cols-2 md:gap-24 items-center lg:min-h-screen w-full  mx-auto px-8 lg:px-10 gap-y-10 lg:gap-y-0 lg:gap-x-12  lg:max-w-6xl 2xl:max-w-7xl;
+  @apply grid md:grid-cols-2 md:gap-24 items-center lg:min-h-screen w-full  mx-auto px-8 lg:px-10 gap-y-10 lg:gap-y-0 lg:gap-x-12  lg:max-w-6xl 2xl:max-w-7xl scroll-mt-24;
   padding-top: clamp(40px, 20vw, 80px);
   padding-bottom: clamp(40px, 20vw, 80px);
 

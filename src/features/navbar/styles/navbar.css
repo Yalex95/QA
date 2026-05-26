@@ -15,7 +15,7 @@
     .nav-list {
       @apply flex gap-6 list-none items-center;
 
-      a {
+      .nav-link {
         @apply text-[var(--color-primary)] no-underline hover:text-[var(--color-secondary)] font-semibold;
       }
     }

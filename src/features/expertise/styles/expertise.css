@@ -1,7 +1,7 @@
 @reference "tailwindcss";
 
 .expertise {
-  @apply w-full  bg-[var(--color-surface)] px-8;
+  @apply w-full  bg-[var(--color-surface)] px-8 scroll-mt-24;
 
   .expertise__container {
     @apply flex flex-wrap flex-col md:flex-row   max-w-7xl mx-auto gap-x-14;

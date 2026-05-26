@@ -1,7 +1,7 @@
 @reference "tailwindcss";
 
 .contact {
-  @apply w-full  bg-white px-8;
+  @apply w-full  bg-white px-8 scroll-mt-24;
   padding-top: clamp(40px, 20vw, 80px);
   padding-bottom: clamp(40px, 20vw, 80px);
   .contact__container {

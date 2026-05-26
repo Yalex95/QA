@@ -7,7 +7,7 @@ export default function Contact() {
   const { t } = useTranslation();
 
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <div className="contact__container">
         <article className="contact__content">
           <header className="contact__header">
