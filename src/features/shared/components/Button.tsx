@@ -22,7 +22,7 @@ export default function Button({
   icon,
   type = "button",
 }: ButtonProps) {
-  const styles = `${baseStyles[variant]} ${className} text-base capitalized rounded-md px-8 py-4 font-semibold inline-flex items-center w-full md:w-fit justify-center`;
+  const styles = `${baseStyles[variant]} ${className} text-base capitalized rounded-md px-8 py-4 font-semibold inline-flex items-center w-full md:w-fit justify-center capitalize`;
 
   if (href) {
     return (

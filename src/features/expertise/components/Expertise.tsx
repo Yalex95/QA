@@ -1,9 +1,12 @@
 import { EXPERTISE } from "@/data/cv";
+import { useTranslation } from "react-i18next";
 import "../styles/expertise.css";
 import ExpertiseCertBadge from "./ExpertiseCertBadge";
 import ExpertiseContent from "./ExpertiseContent";
 import ExpertiseImage from "./ExpertiseImage";
 export default function Expertise() {
+  const { t } = useTranslation();
+
   return (
     <section id="expertise" className="expertise">
       <div className="expertise__container">
@@ -11,7 +14,7 @@ export default function Expertise() {
         <ExpertiseContent />
         <div className="expertise__iso_certs_container ">
           {EXPERTISE.certifications.map((cert, index) => (
-            <ExpertiseCertBadge key={index} certification={cert} />
+            <ExpertiseCertBadge key={index} certification={t(cert)} />
           ))}
         </div>
       </div>

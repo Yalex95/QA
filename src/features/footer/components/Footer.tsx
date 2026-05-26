@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next";
 import Logo from "../assets/QA_eng.webp";
 import "../styles/footer.css";
 export default function Footer() {
   const currentDate = new Date();
+  const { t } = useTranslation();
   return (
     <footer className="footer">
       <div className="footer__container">
@@ -15,10 +17,10 @@ export default function Footer() {
         <nav className="footer__nav" aria-label="Footer navigation">
           <ul className="footer__links">
             <li>
-              <a href="#">Privacy Policy</a>
+              <a href="#">{t("footer.privacy")}</a>
             </li>
             <li>
-              <a href="#">Terms of Service</a>
+              <a href="#">{t("footer.terms")}</a>
             </li>
           </ul>
         </nav>

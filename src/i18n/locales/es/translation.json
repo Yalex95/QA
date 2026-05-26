@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "about": "Sobre Mí",
+    "expertise": "Experiencia",
+    "projects": "Proyectos",
+    "certifications": "Certificaciones",
+    "download_cv": "Descargar CV"
+  },
+
+  "hero": {
+    "title": [
+      "Especialista Industrial QA & HS&E |",
+      "Cumplimiento, Seguridad y Mejora"
+    ],
+    "description": "Impulsando sistemas de calidad, regulaciones de seguridad y gestión de riesgos con precisión y confiabilidad en sectores industriales globales.",
+    "contact_me": "Contáctame",
+    "available": "disponible para consultoría",
+    "profesional_cred": "Credenciales profesionales",
+    "certified_prof": "profesional certificado"
+  },
+
+  "expertise": {
+    "title": "Experiencia en Manufactura e Ingeniería",
+    "desc": "Profesional dedicado con más de una década de experiencia garantizando los más altos estándares de seguridad y calidad en entornos industriales complejos. Mi enfoque integra auditorías técnicas rigurosas con culturas de seguridad proactivas para minimizar riesgos y maximizar la eficiencia operativa.",
+    "certifications": [
+      "ISO 9001: Gestión de Calidad",
+      "ISO 14001: Ambiental",
+      "ISO 45001: Salud Ocupacional",
+      "ISO 13485: Dispositivos Médicos"
+    ],
+    "read_professional_bio": "leer biografía profesional"
+  },
+
+  "core_specialist": {
+    "title": "Especialidades Principales",
+    "paragraph": "Proporcionando soluciones industriales integrales mediante dominio técnico e implementación estratégica de seguridad.",
+
+    "specialist_list": [
+      {
+        "icon": "material-symbols:fact-check-outline",
+        "title": "Aseguramiento y Control de Calidad",
+        "text": "Implementación de marcos QA robustos para manufactura libre de defectos."
+      },
+      {
+        "icon": "icon-park-outline:caution",
+        "title": "Evaluación y Análisis de Riesgos",
+        "text": "Identificación y mitigación de riesgos operativos antes de que ocurran."
+      },
+      {
+        "icon": "streamline:justice-hammer-remix",
+        "title": "Cumplimiento Normativo",
+        "text": "Gestión de regulaciones legales e industriales complejas."
+      },
+      {
+        "icon": "ic:baseline-fact-check",
+        "title": "Capacitación y Auditorías de Seguridad",
+        "text": "Auditorías internas integrales y capacitación especializada para el personal."
+      },
+      {
+        "icon": "carbon:growth",
+        "title": "Mejora Continua",
+        "text": "Metodologías Lean y Six Sigma para excelencia operativa."
+      }
+    ]
+  },
+
+  "metrics_impact": [
+    {
+      "id": 1,
+      "metric": "35%",
+      "impact": "Reducción de Incidentes Laborales"
+    },
+    {
+      "id": 2,
+      "metric": "100%",
+      "impact": "Tasa de Cumplimiento en Auditorías"
+    },
+    {
+      "id": 3,
+      "metric": "15+",
+      "impact": "Auditorías Industriales Mayores Realizadas"
+    }
+  ],
+
+  "case_studies": {
+    "title": "Casos de Estudio",
+    "paragraph": "Soluciones reales implementadas en diversos entornos industriales.",
+    "view_all_projects": "ver todos los proyectos",
+
+    "items": [
+      {
+        "id": 1,
+        "badge": "Petróleo y Gas",
+        "title": "Modernización de Sistemas HS&E en Refinería",
+        "problem": "Incremento de incidentes menores y mecanismos obsoletos de reporte de riesgos que generaban retrasos de producción.",
+        "action": "Implementación de un sistema digital de reporte de riesgos en tiempo real y talleres de capacitación en seguridad.",
+        "result": "Reducción del 40% en incidentes en 6 meses. 100% de adopción del personal."
+      },
+      {
+        "id": 2,
+        "badge": "Manufactura",
+        "title": "Optimización de Control de Calidad Automotriz",
+        "problem": "Altas tasas de rechazo en la etapa final de ensamblaje causando desperdicio significativo de materiales.",
+        "action": "Implementación del proceso Lean Six Sigma DMAIC y actualización del equipo QA a nivel estación.",
+        "result": "Reducción del desperdicio en 22%. Ahorro anual de $450k en costos de materiales."
+      }
+    ]
+  },
+
+  "certifications_section": {
+    "title": "Certificaciones y Credenciales",
+    "paragraph": "Estándares profesionales verificados y certificaciones internacionales de la industria.",
+    "download": "Descargar",
+    "view_cert": "ver certificado",
+    "issuing_org": "Organismo Emisor:",
+    "year": "Año:",
+    "credential_id": "ID de Credencial:",
+    "certifications": [
+      {
+        "type": "ISO",
+        "name": "ISO 9001:2015 Auditor Líder",
+        "issuing_org": "IRCA",
+        "year": "2022",
+        "id": "QA-9001-8841-X"
+      },
+      {
+        "type": "OSHA",
+        "name": "OSHA 30-Hour Outreach",
+        "issuing_org": "IRCA",
+        "year": "2022",
+        "id": "QA-9001-8842-X"
+      },
+      {
+        "type": "Safety",
+        "name": "ISO 45001 Auditor Interno",
+        "issuing_org": "IRCA",
+        "year": "2022",
+        "id": "QA-9001-8843-X"
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Hablemos de Tu Próximo Objetivo de Cumplimiento",
+    "paragraph": "¿Buscas fortalecer tus protocolos de seguridad o implementar un sistema global de calidad? Contáctame para una consulta.",
+    "mail": "qa@gmail.com",
+    "location": "Tijuana, BC México",
+    "support_title": "Soporte Profesional Inmediato",
+    "support_p": "Obtén respuestas rápidas sobre auditorías de seguridad, implementación de sistemas de calidad o consultas generales.",
+    "disclaimer": "Normalmente responde dentro de 1 hora en horario laboral",
+    "download_cv": "Descargar CV",
+    "linkedIn": "Perfil de LinkedIn",
+    "contact_wa": "Contáctame vía WhatsApp"
+  },
+
+  "footer": {
+    "privacy": "política de privacidad",
+    "terms": "términos de servicio"
+  }
+}
